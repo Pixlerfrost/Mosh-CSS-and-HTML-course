@@ -5,8 +5,8 @@ html {
 }
 
 :root {
-  --color-primary: #2584ff;
-  --color-secondry: #00d9ff;
+  --color-primary: #00d9ff;
+  --color-secondry: #2584ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -85,4 +85,38 @@ a {
 
 .link-arrow:hover::after {
   margin-left: 10px;
+}
+
+/* badges */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 5rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondry);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
 }
