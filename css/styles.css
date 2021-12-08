@@ -397,7 +397,7 @@ a {
   font-size: 3rem;
   font-weight: 600;
   font-style: normal;
-  margin-bottom: 10;
+  margin-bottom: 0;
 }
 
 .quote__organization {
@@ -410,4 +410,18 @@ a {
 .quote__line {
   position: relative;
   bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .quote__organization {
+    font-size: 1.6rem;
+  }
 }
