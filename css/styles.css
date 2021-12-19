@@ -154,6 +154,10 @@ a {
   margin-bottom: 1rem;
 }
 
+.ion__chevron {
+  color: #fff;
+}
+
 .icon {
   width: 40px;
   height: 40px;
@@ -626,6 +630,11 @@ ion-icon {
   transition: transform 0.3s;
 }
 
+.collapsible__chevron,
+ion-icon {
+  color: grey;
+}
+
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
@@ -838,4 +847,81 @@ ion-icon {
   padding-left: 3rem;
   letter-spacing: 1px;
   color: #7b858b;
+}
+
+/* Footer */
+
+.footer {
+  background: #232323;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
 }
