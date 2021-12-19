@@ -176,7 +176,7 @@ a {
   fill: #fff;
 }
 
-ion-icon {
+.media__image ion-icon {
   color: #126de4;
   width: 40px;
   height: 40px;
@@ -630,8 +630,8 @@ ion-icon {
   transition: transform 0.3s;
 }
 
-.collapsible__chevron,
-ion-icon {
+ion-icon,
+.collapsible__chevron {
   color: grey;
 }
 
